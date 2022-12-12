@@ -1,0 +1,21 @@
+export const HANDLE_CHANGE="HANDLE_CHANGE"
+
+export const HANDLE_CHECK="HANDLE_CHECK"
+
+export const ALL_PRODUCTS="ALL_PRODUCTS"
+
+export const FILTERED_PRODUCTS="FILTERED_PRODUCTS"
+
+export const CLEAR_FILTERS="CLEAR_FILTERS"
+
+export const ADD_PRODUCT="ADD_PRODUCT"
+
+export const UPDATE_CART="UPDATE_CART"
+
+export const DELETE_CART="DELETE_CART"
+
+export const CLEAR_CART="CLEAR_CART"
+
+export const CALL_ALERT="CALL_ALERT"
+
+export const CLEAR_ALERT="CLEAR_ALERT"

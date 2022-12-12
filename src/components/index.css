@@ -1,0 +1,379 @@
+.nav-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-flex{
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.nav-end{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.nav-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.nav-headers,.nav-end{
+    margin-top: 10px;
+}
+
+.ham{
+    font-size: 37px;
+margin-top: 16px;
+cursor: pointer;
+display: none;
+}
+
+.small-screen-main{
+    position: fixed;
+top: 0px;
+z-index: 20;
+background: white;
+height: 100vh;
+width: 100%;
+display: none;
+transform: translateX(-1200px);
+transition: .4s ease;
+}
+
+.small-screen-nav-active{
+    transform: translateX(0px);
+}
+
+
+
+.small-nav-front{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.cross{
+    cursor: pointer;
+    font-size: 40px;
+    color: red;
+}
+
+.small-screen-nav-center li a{
+    font-family: 'Roboto Flex', sans-serif;
+    /* padding: 40px 20px; */
+    margin-bottom: 50px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.small-nav-end{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+
+
+    @media screen and (max-width:900px) {
+        .ham{
+            display: block;
+        }
+        .nav-end{
+            display: none;
+        }
+        .big-screen-nav{
+            display: none;
+        }
+        .small-screen-main{
+            display: block;
+        }
+    }
+
+    .shop-btn {
+        background-color: rgb(207, 115, 115);
+        padding: 14px;
+    }
+
+
+    /* The Home Front Page */
+    
+    .images img{
+       height: 100%;
+       width: 100%;
+    }
+
+    
+    .home-front-main .content p{
+        line-height: 38px;
+        margin-bottom: 38px;
+    }
+    
+    .images{
+        position: relative;
+        padding: 30px;
+        background-color: rgb(48, 38, 38);
+    }
+
+    .img-1{
+        position: absolute;
+    }
+    .img-2{
+       position: absolute;
+    }
+    .img-3{
+      position: absolute;
+    }
+
+
+    @media screen and (max-width:900px){
+        .home-front-main{
+            grid-template-columns: 1fr;
+        }
+        .images{
+            display: none;
+        }
+    }
+
+/* 
+    .flex-custom{
+        display: flex;
+        justify-content: space-around;
+    } */
+
+    .c-icon{
+        font-size: 40px;
+   
+    }
+
+.c-icon-main{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(218, 206, 206);
+    display: grid;
+    place-items: center;    
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.c-box{
+    text-align: center;
+    background-color: rgb(211, 185, 185);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.c-front{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.c-main{
+    background-color: rgb(228, 151, 151);
+    padding: 30px;
+}
+.c-main p{
+    color: brown;
+}
+
+/* The NewsLettere */
+.news-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.news-input input{
+    padding: 10px;
+    outline: none;
+    border: 1.4px solid brown;
+    width: 100%;
+}
+
+.news-input button{
+    position: absolute;
+right: -1px;
+padding: 12px;
+color: brown;
+background: #e38f8f;
+border-radius: 0px;
+}
+
+.news-input button:hover{
+    background-color: rgb(204, 194, 194);
+}
+
+
+.f-main{
+   background-color: rgb(215, 38, 38);
+   padding: 20px;
+}
+
+.f-main h5{
+    color: white;
+}
+.single-f-card{
+    position: relative;
+}
+
+
+
+.f-single-card{
+    position: relative;
+    cursor: pointer;
+    height: 240px;
+}
+
+.f-single-card .f-img-main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;  
+}
+
+.f-single-card img{
+    height: 100%;
+    width: 100%;
+}
+
+.f-overlay{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: none;
+}
+
+.search{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
+
+.f-single-card:hover .f-overlay,.search{
+    display: block;
+    /* opacity: 1; */
+}
+
+/*  */
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.p-img{
+    width: 100%;
+    height: 100%;
+}
+
+.color{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.tick{
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.activeTick{
+    display: block;
+}
+
+.minus,.plus{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Cart */
+
+.cart-img{
+    height: 50px;
+}
+
+.cart-flex{
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.cart-main{
+    width: 95%;
+ }
+
+
+@media screen and (max-width:900px) {
+     .cart-flex{
+        flex-direction: column;
+     }
+     .cart-main{
+        width: 95%;
+     }
+     .cart-head{
+       display: none;
+     }
+}
+
+
+.cart-rel{
+    position: relative;
+}
+
+.cart-no{
+    position: absolute;
+right: -16px;
+top: -8px;
+font-size: 24px;
+color: brown;
+background: rgba(0,0,0,.3);
+height: 34px;
+width: 33px;
+display: grid;
+place-items: center;
+border-radius: 50%;
+}
+
+
+.bill-main{
+    position: relative;
+}
+
+.bill-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .bill-main{
+        width: 90%;
+    }
+    .btns-main{
+        width: 90%;
+    }
+}
